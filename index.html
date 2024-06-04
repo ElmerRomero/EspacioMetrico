@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Click Points</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <div id="info">
+            <p id="cursorPosition" class="info-text"></p>
+            <p id="point1" class="info-text"></p>
+            <p id="point2" class="info-text"></p>
+            <p id="point3" class="info-text"></p>
+            <p id="distance" class="info-text"></p>
+            <div>
+                <label for="property" class="info-text">Seleccione la propiedad a verificar:</label>
+                <select id="property" class="styled-select">
+                    <option value="positividad">Positividad</option>
+                    <option value="simetria">Simetría</option>
+                    <option value="triangular">Desigualdad triangular</option>
+                </select>
+                <button id="verifyBtn" class="styled-button">Verificar</button>
+            </div>
+            <p id="verification" class="result-text"></p>
+            <p id="explanation" class="result-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
